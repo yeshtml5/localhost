@@ -24,6 +24,10 @@ body,p,h1,h2,h3,h4,h5,h6,th,td,input,select,textarea,button{color:#1a1a1a;font-s
 .clfix{*display:inline-block;zoom:1;}
 .desc{background:#e1e1e1;color:#111;border:1px dashed #111;padding:20px;}/*설명글*/
 .ellips{display:block;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;} /*...말줌임표*/
+/*=== Position ===============================================*/
+.box{box-sizing:border-box;}
+.rel{position:relative;}
+.abs{position:absolute;}
 /*=== Layout ===============================================*/
 /*다단나누기*/
 .col{}
@@ -55,16 +59,10 @@ body,p,h1,h2,h3,h4,h5,h6,th,td,input,select,textarea,button{color:#1a1a1a;font-s
 /*=== Symbol =================================================*/
 
 /*=== Color =================================================*/
-.fcWhite{color:#FFF;}
-.fcBlack{color:#000;}
-.fcBlue{color:#0e77d9;}
-.fcOrange{color:#e9790b;}
-.bgWhite{background:#FFF;}
-.bgBlue{background:#0e77d9;}
+
 /*=== Anchor ===============================================*/
 a{color:inherit; text-decoration:none; }
 a:active , a:hover{ text-decoration:none;}
-
 /*=== Button ===============================================*/
 
 /*=== Heading ==============================================*/
