@@ -12,6 +12,8 @@
           content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <!--library-->
+    <link type="text/css" rel="stylesheet" href="/src/css/common.css">
+    <link type="text/css" rel="stylesheet" href="/src/css/layout.css">
     <script type="text/javascript" src="/src/lib/jquery.js"></script>
     <script type="text/javascript" src="/src/lib/angular.js"></script>
     <script type="text/javascript" src="/src/lib/angular-route.js"></script>
@@ -21,7 +23,11 @@
 </head>
 <body>
 <header class="container">
-    <nav>
+    <nav class="bg-blue">
+        <a class="menu" href="#">메뉴</a>
+        <a class="menu" href="#">메뉴</a>
+        <a class="menu" href="#">메뉴</a>
+        <a class="menu" href="#">메뉴</a>
         <a class="menu" href="#">메뉴</a>
     </nav>
 </header>
