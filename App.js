@@ -21,8 +21,4 @@ app.controller('mainCtrl', function ($scope) {
     $scope.message = 'Everyone come and see how good I look!';
 });
 
-app.controller('buttonCtrl', function ($scope, $routeParams) {
-    $scope.username = $routeParams.username;
-    $scope.message = 'Look! I am an about page.';
-});
 

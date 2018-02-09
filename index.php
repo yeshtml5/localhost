@@ -28,6 +28,7 @@
     <nav class="bg-blue">
         <a class="menu" href="#!/">HOME</a>
         <a class="menu" href="#!/button">Button</a>
+        <a class="menu" href="#!/table">Table</a>
         <a class="menu" href="#!/test">test</a>
     </nav>
 </header>
