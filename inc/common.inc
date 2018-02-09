@@ -17,7 +17,7 @@ function head()
 
 function footer()
 {
-    include_once __ROOT__ . "/inc/footer.php";
+    include_once __ROOT__ . "/inc/footer.inc";
 }
 
 ?>

@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: bos
- * Date: 2018. 2. 8.
- * Time: 오후 6:52
- */
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,6 +20,8 @@
     <script type="text/javascript" src="/src/js/common.js"></script>
 </head>
 <body>
-<section>
-    <nav>dul</nav>
-</section>
+<header class="container">
+    <nav>
+        <a class="menu" href="#">메뉴</a>
+    </nav>
+</header>
