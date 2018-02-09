@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="localApp" ng-controller="localCtrl">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>{{title}}</title>
     <!--meta-->
     <meta charset="UTF-8"/>
     <meta name="viewport"
@@ -17,28 +17,18 @@
     <!--app-->
     <script type="text/javascript" src="/App.js"></script>
     <script type="text/javascript" src="/pages/style/buttonCtrl.js"></script>
-
-    <!--
-    <script type="text/javascript" src="/src/js/core.js"></script>
-    <script type="text/javascript" src="/src/js/common.js"></script>
-    -->
 </head>
-<body ng-app="localApp" ng-controller="localCtrl">
-<header class="container">
-    <nav class="bg-blue">
-        <a class="menu" href="#!/">HOME</a>
-        <a class="menu" href="#!/button">Button</a>
-        <a class="menu" href="#!/table">Table</a>
-        <a class="menu" href="#!/test">test</a>
-    </nav>
-</header>
+<body >
+<!--header-->
+<ng-header></ng-header>
+<!--//header-->
+
 <main class="container">
     <article class="viewer" ng-view></article>
 </main>
-<footer>
-    <section>
-        copyright
-    </section>
-</footer>
+
+<!--footer-->
+<ng-footer></ng-footer>
+<!--//footer-->
 </body>
 </html>
