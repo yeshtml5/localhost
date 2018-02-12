@@ -73,6 +73,10 @@ body, p, h1, h2, h3, h4, h5, h6, th, td, input, select, textarea, button {
     font-size: 1%;
     line-height: 1%;
 }
+/*이미지동일비율정리,원하는사이즈 width/height 적어줄것*/
+img.fit {
+    object-fit: cover;
+}
 .clfix:after {
     content: ".";
     display: block;

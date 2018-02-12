@@ -1,8 +1,8 @@
 @charset "utf-8";
 /*=== common =================================================*/
 .container {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
     box-sizing: border-box;
 }
 /*=== header =================================================*/
@@ -18,11 +18,12 @@ header {
 header nav {
     position: relative;
     padding: 30px 0;
+    text-align: center;
     color: #fff;
 }
 header nav a {
-    margin: 0 20px;
-    font-size: 16px;
+    margin: 0 10px;
+    font-size: 14px;
 }
 /*=== footer =================================================*/
 footer {
@@ -32,15 +33,12 @@ footer {
 main.outline {
     font-size: 16px;
     height: 300px;
-
 }
 article.viewer {
     display: block;
     min-height: 500px;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid #ff0000;
-
 }
 /*=== nav =================================================*/
 nav {
@@ -51,22 +49,22 @@ nav {
 }
 .listWrap li {
     margin-bottom: 10px;
+    border-radius: 2px;
+    color: rgba(0, 0, 0, 0.87);
+    box-sizing: border-box;
+    background: rgb(250, 250, 250);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 .listWrap li:nth-child(odd) {
     background: #f0f0f0;
 }
 .listWrap i.thumb {
-    display: block;
-    width: 80px;
-    overflow: hidden;
+    display: inline-block;
+    padding: 5px;
+    box-sizing: border-box;
 }
 .listWrap i.thumb img {
-    width: 100%;
-    height: auto;
-    vertical-align: top;
-}
-.listWrap .wrapper a > * {
-    display: inline-block;
-    vertical-align: middle;
-
+    object-fit: cover;
+    width: 80px;
+    height: 80px;
 }
