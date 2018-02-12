@@ -25,15 +25,48 @@ header nav a {
     font-size: 16px;
 }
 /*=== footer =================================================*/
-
+footer {
+    padding: 10px 0;
+}
 /*=== main =================================================*/
+main.outline {
+    font-size: 16px;
+    height: 300px;
+
+}
 article.viewer {
-    width: 500px;
-    margin: 100px auto;
-    height: 500px;
+    display: block;
+    min-height: 500px;
+    margin-left: auto;
+    margin-right: auto;
     border: 1px solid #ff0000;
+
 }
 /*=== nav =================================================*/
 nav {
+
+}
+/*=== pages =================================================*/
+.listWrap {
+}
+.listWrap li {
+    margin-bottom: 10px;
+}
+.listWrap li:nth-child(odd) {
+    background: #f0f0f0;
+}
+.listWrap i.thumb {
+    display: block;
+    width: 80px;
+    overflow: hidden;
+}
+.listWrap i.thumb img {
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+.listWrap .wrapper a > * {
+    display: inline-block;
+    vertical-align: middle;
 
 }

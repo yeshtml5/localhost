@@ -1,10 +1,68 @@
-{
-  "compilerOptions": {
-    "module": "commonjs",
-    "target": "es5",
-    "sourceMap": true
+[
+  {
+    "name": "name_1",
+    "img": "/src/images/data/img1.jpg",
+    "token": "100,000",
+    "callback": "callback1"
   },
-  "exclude": [
-    "node_modules"
-  ]
-}
+  {
+    "name": "name_2",
+    "img": "/src/images/data/img1.jpg",
+    "token": "100,000",
+    "callback": "callback1"
+  },
+  {
+    "name": "name_3",
+    "img": "/src/images/data/img1.jpg",
+    "token": "100,000",
+    "callback": "callback1"
+  },
+  {
+    "name": "name_4",
+    "img": "/src/images/data/img1.jpg",
+    "token": "100,000",
+    "callback": "callback1"
+  },
+  {
+    "name": "name_1",
+    "img": "/src/images/data/img1.jpg",
+    "token": "100,000",
+    "callback": "callback1"
+  },
+  {
+    "name": "name_1",
+    "img": "/src/images/data/img1.jpg",
+    "token": "100,000",
+    "callback": "callback1"
+  },
+  {
+    "name": "name_1",
+    "img": "/src/images/data/img1.jpg",
+    "token": "100,000",
+    "callback": "callback1"
+  },
+  {
+    "name": "name_1",
+    "img": "/src/images/data/img1.jpg",
+    "token": "100,000",
+    "callback": "callback1"
+  },
+  {
+    "name": "name_1",
+    "img": "/src/images/data/img1.jpg",
+    "token": "100,000",
+    "callback": "callback1"
+  },
+  {
+    "name": "name_1",
+    "img": "/src/images/data/img1.jpg",
+    "token": "100,000",
+    "callback": "callback1"
+  },
+  {
+    "name": "name_1",
+    "img": "/src/images/data/img1.jpg",
+    "token": "100,000",
+    "callback": "callback1"
+  }
+]

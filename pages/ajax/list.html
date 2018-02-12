@@ -1,0 +1,41 @@
+<h2>list page</h2>
+<main class="listWrap" ng-controller="listCtrl">
+    <!--list-->
+    <li data-index="{{$index}}" ng-repeat="list in lists">
+        <div class="wrapper">
+            <a href="#!/view/{{$index}}"><i class="thumb"><img src="{{list.img}}"></i>
+                <span>-------</span>
+                <span>{{list.name }}</span>
+            </a>
+            <button class="btn-blue" ng-click="clickFunc(list,$index);">상세보기</button>
+        </div>
+    </li>
+    <!--//list-->
+</main>
+<p>
+    https://material.angularjs.org/latest/demo/list
+</p>
+
+<!--
+0
+down vote
+//module dependent on ngRoute
+var app=angular.module("myApp",['ngRoute']);
+//spa-Route Config file
+app.config(function($routeProvider,$locationProvider){
+$locationProvider.hashPrefix('');
+$routeProvider
+.when('/',{template:'HOME'})
+.when('/about/:paramOne/:paramTwo',{template:'ABOUT',controller:'aboutCtrl'})
+.otherwise({template:'Not Found'});
+}
+//aboutUs controller
+app.controller('aboutCtrl',function($routeParams){
+$scope.paramOnePrint=$routeParams.paramOne;
+$scope.paramTwoPrint=$routeParams.paramTwo;
+});
+in index.html
+
+<a ng-href="#/about/firstParam/secondParam">About</a>
+firstParam and secondParam can be anything according to your needs.
+-->

@@ -6,6 +6,12 @@ app.config(function ($routeProvider) {
     $routeProvider.when('/', {
         templateUrl: '/pages/main/index.html',
         controller: 'mainCtrl'
+    }).when('/ajax', {
+        templateUrl: '/pages/ajax/list.html',
+        controller: 'listCtrl'
+    }).when('/view/:id', {
+        templateUrl: '/pages/ajax/view.html',
+        controller: 'viewCtrl'
     }).when('/button', {
         templateUrl: '/pages/style/button.html',
         controller: 'buttonCtrl'
