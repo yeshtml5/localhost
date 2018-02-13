@@ -13,18 +13,19 @@
         <span>{{selectSex}}</span>
     </div>
     <!--list-->
-    <li data-index="{{$index}}" ng-repeat="list in lists | filter:(!!selectSex || undefined) &&{sex:selectSex}:true"
-        class="clfix">
-        <div class="img-wrap">
-            <a href="#!/view/{{$index}}">
-                <i class="thumb"><img src="{{list.img}}"></i>
-                <span>{{list.name }}</span>
-            </a>
-        </div>
-        <div class="txt-wrap">
-            <button class="btn-blue" ng-click="clickFunc(list,$index);">상세보기</button>
-        </div>
-    </li>
+    <ul>
+        <li data-index="{{$index}}" ng-repeat="list in lists | filter:(!!selectSex || undefined) && {sex:selectSex} : true" class="clfix">
+            <div class="img-wrap">
+                <a href="#!/view/{{$index}}" ng-model="list">
+                    <i class="thumb"><img src="{{list.img}}"></i>
+                    <span>{{list.name }}</span>
+                </a>
+            </div>
+            <div class="txt-wrap">
+                <button class="btn-blue" ng-click="clickFunc(list,$index);">상세보기</button>
+            </div>
+        </li>
+    </ul>
     <!--//list-->
 </main>
 <style>
@@ -44,3 +45,9 @@
         border: 1px solid #111;
     }
 </style>
+
+
+<script type="text/javascript">
+
+
+</script>

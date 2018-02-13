@@ -6,5 +6,6 @@ angular.module('localApp').controller('viewCtrl', function ($scope, $routeParams
     console.log($scope.index);
     console.log(url);
     console.log("-----");
+
 //    $scope.name = $location.id;
 });

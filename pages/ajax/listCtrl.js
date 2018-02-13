@@ -1,4 +1,10 @@
-angular.module('localApp').controller('listCtrl', function ($scope, $http) {
+/*
+* https://stackoverflow.com/questions/22408790/angularjs-passing-data-between-pages
+* */
+angular.module('localApp').controller('listCtrl', function ($scope, ajaxStorage, $http) {
+    var obj = ajaxStorage.load();
+
+    console.log(obj);
     var ajax = "/src/json/list.json";
     $http.get(ajax).then(function (res) {
         //data
@@ -13,5 +19,14 @@ angular.module('localApp').controller('listCtrl', function ($scope, $http) {
 
         //$('button').removeClass('btn-blue');
     };
+    (function ($) {
+        $(document).ready(function () {
+            $('li img').bind('click', function (event) {
+                event.preventDefault();
+                var _os = $.getOs();
+                console.log(_os);
+            });
+        });
+    })($);
 });
 

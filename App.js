@@ -1,14 +1,14 @@
 var app = angular.module('localApp', ['ngRoute']);
 /*==================================================
    Router
+   controller 표시 2번호출됨.
 ==================================================*/
 app.config(function ($routeProvider) {
     $routeProvider.when('/', {
         templateUrl: '/pages/main/index.html',
         controller: 'mainCtrl'
     }).when('/ajax', {
-        templateUrl: '/pages/ajax/list.html',
-        controller: 'listCtrl'
+        templateUrl: '/pages/ajax/list.html'
     }).when('/view/:id', {
         templateUrl: '/pages/ajax/view.html',
         controller: 'viewCtrl'
