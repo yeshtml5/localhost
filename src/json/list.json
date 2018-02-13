@@ -2,6 +2,7 @@
   {
     "key": "1",
     "name": "한가인",
+    "sex": "female",
     "img": "/src/images/data/img1.jpg",
     "token": "100,000",
     "buy": "100",
@@ -12,6 +13,7 @@
   {
     "key": "2",
     "name": "원빈",
+    "sex": "male",
     "img": "/src/images/data/img2.jpg",
     "token": "3,100,000",
     "buy": "1,300",
@@ -22,6 +24,7 @@
   {
     "key": "3",
     "name": "김태희",
+    "sex": "female",
     "img": "/src/images/data/img3.jpg",
     "token": "100,000",
     "buy": "1010",
@@ -32,6 +35,7 @@
   {
     "key": "4",
     "name": "가즈아",
+    "sex": "etc",
     "img": "/src/images/data/img4.jpg",
     "token": "4,100,000",
     "buy": "10000",
@@ -42,6 +46,7 @@
   {
     "key": "5",
     "name": "박보검",
+    "sex": "male",
     "img": "/src/images/data/img5.jpg",
     "token": "200",
     "buy": "100",
@@ -52,6 +57,7 @@
   {
     "key": "6",
     "name": "아이유",
+    "sex": "female",
     "img": "/src/images/data/img6.jpg",
     "token": "30,000",
     "buy": "100",
@@ -62,6 +68,7 @@
   {
     "key": "7",
     "name": "한지민",
+    "sex": "female",
     "img": "/src/images/data/img7.jpg",
     "token": "2,100,000",
     "buy": "1120",
@@ -72,6 +79,7 @@
   {
     "key": "8",
     "name": "김병만",
+    "sex": "male",
     "img": "/src/images/data/img8.jpg",
     "token": "30,000",
     "buy": "10,330",
@@ -82,6 +90,7 @@
   {
     "key": "9",
     "name": "이름모를고양이",
+    "sex": "female",
     "img": "/src/images/data/img9.jpg",
     "token": "230",
     "buy": "10",
@@ -92,6 +101,7 @@
   {
     "key": "10",
     "name": "시바견",
+    "sex": "male",
     "img": "/src/images/data/img10.jpg",
     "token": "3,000",
     "buy": "10",

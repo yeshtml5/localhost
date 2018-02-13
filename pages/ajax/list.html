@@ -2,8 +2,19 @@
 @리스트페이지
 -->
 <main class="listWrap" ng-controller="listCtrl">
+    <!--Filter-->
+    <div class="filter-wrap">
+        <select id="filter" ng-model="selectSex">
+            <option value="" checked="checked">모두선택</option>
+            <option value="male">남자</option>
+            <option value="female">여자</option>
+            <option value="etc">기타</option>
+        </select>
+        <span>{{selectSex}}</span>
+    </div>
     <!--list-->
-    <li data-index="{{$index}}" ng-repeat="list in lists" class="clfix">
+    <li data-index="{{$index}}" ng-repeat="list in lists | filter:(!!selectSex || undefined) &&{sex:selectSex}:true"
+        class="clfix">
         <div class="img-wrap">
             <a href="#!/view/{{$index}}">
                 <i class="thumb"><img src="{{list.img}}"></i>
@@ -22,5 +33,14 @@
     }
     .listWrap .txt-wrap {
         float: right;
+    }
+    .filter-wrap {
+        padding: 10px 0;
+        background: #ccc;
+    }
+    .filter-wrap select {
+        display: inline-block;
+        padding: 10px;
+        border: 1px solid #111;
     }
 </style>

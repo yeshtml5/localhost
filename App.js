@@ -15,6 +15,9 @@ app.config(function ($routeProvider) {
     }).when('/button', {
         templateUrl: '/pages/style/button.html',
         controller: 'buttonCtrl'
+    }).when('/util', {
+        templateUrl: '/pages/util/limit.html',
+        controller: 'limitCtrl'
     }).when('/error', {
         templateUrl: '/pages/etc/error.html',
         controller: 'buttonCtrl'

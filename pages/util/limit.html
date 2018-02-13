@@ -1,0 +1,10 @@
+<!--
+filter 에서 limit
+
+-->
+
+<main ng-controller="limitCtrl">
+    <p>{{numbers | limitTo:limit}}</p>
+    <p>limit</p>
+    <p><input type="text" ng-model="limit" value="3" style="border: 1px solid #111;"></p>
+</main>
