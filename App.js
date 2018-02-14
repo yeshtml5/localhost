@@ -10,8 +10,7 @@ app.config(function ($routeProvider) {
     }).when('/ajax', {
         templateUrl: '/pages/ajax/list.html'
     }).when('/view/:id', {
-        templateUrl: '/pages/ajax/view.html',
-        controller: 'viewCtrl'
+        templateUrl: '/pages/ajax/view.html'
     }).when('/button', {
         templateUrl: '/pages/style/button.html',
         controller: 'buttonCtrl'
@@ -26,7 +25,7 @@ app.config(function ($routeProvider) {
     });
 });
 /*==================================================
-   Templete
+   directive
 ==================================================*/
 app.directive('ngHeader', function () {
     return {
