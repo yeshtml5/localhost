@@ -7,7 +7,9 @@ angular.module('localApp').controller('viewCtrl', function ($scope, $routeParams
     $http.get(ajax).then(function (res) {
         //data
         var _info = res.data[$scope.index];
+        $scope.info = _info;
         $scope.img = _info.img;
+
     });
 
 

@@ -3,9 +3,13 @@
 <main class="outline">
     <div ng-controller="viewCtrl">
         <div style="width:50%;">
-            <img class="flex" src="{{img}}">
+            <img class="flex" ng-src="{{img}}">
         </div>
-        <p>{{name}}</p>
+        <p>{{info.name}}</p>
+        <p>{{info.sex}}</p>
+        <p>{{info.tag}}</p>
+        <p>{{info.token | number:fractionSize}}</p>
+        <hr>
         <span>{{url}}</span>
     </div>
 </main>
