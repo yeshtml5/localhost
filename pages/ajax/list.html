@@ -15,7 +15,7 @@
     <!--list-->
     <ul>
         <li data-index="{{$index}}"
-            ng-repeat="list in lists | filter:(!!selectSex || undefined) && {sex:selectSex} : true| orderBy:'token':true "
+            ng-repeat="list in lists | filter:(!!selectSex || undefined) && {sex:selectSex} : true| orderBy:'token':true"
             class="rel clfix">
             <a href="#!/view/{{list.key}}" ng-model="list">
                 <div class="img-wrap ">
@@ -25,8 +25,8 @@
                 <div class="txt-wrap ">
                     <span class="buy">{{list.buy | number:fractionSize}}</span>
                     <span class="sell">{{list.sell | number:fractionSize}}</span>
-                    <span class="token">{{list.token | number:fractionSize}}</span>
                     <br>
+                    <span class="token">{{list.token | number:fractionSize}}</span>
                     <button class="btn-blue" ng-click="clickFunc(list,$index);">상세보기</button>
                 </div>
             </a>

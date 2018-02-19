@@ -34,7 +34,24 @@ app.directive('ngHeader', function () {
 });
 app.directive('ngFooter', function () {
     return {
-        templateUrl: '/template/footer.html'
+        //  templateUrl: '/template/footer.html'
+        template: "<ng-include src='getTemplateUrl()'/>",
+        scope: {
+            user: "= data"
+        },
+        restrict: "E",
+        controller: function ($scope) {
+            var _url = window.location.href;
+            console.log(_url);
+            var _condition = (_url == 'http://localhost/#!/ajax') ? true : false;
+            $scope.getTemplateUrl = function () {
+                if (_condition) {
+                    return '/template/header.html';
+                } else {
+                    return '/template/footer.html';
+                }
+            }
+        }
     }
 });
 /*==================================================

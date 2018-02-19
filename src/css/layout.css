@@ -80,6 +80,9 @@ nav {
     width: 100px;
     transform: translateY(-50%);
 }
+.listWrap li span {
+    padding-left: 10px;
+}
 .listWrap li span.buy {
     color: #ff0000;
 }

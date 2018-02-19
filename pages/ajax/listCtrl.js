@@ -11,7 +11,6 @@ angular.module('localApp').controller('listCtrl', function ($scope, ajaxStorage,
     });
 
     $scope.clickFunc = function (list, index) {
-
         document.title = 'test';
         //$('button').removeClass('btn-blue');
     };
@@ -21,8 +20,7 @@ angular.module('localApp').controller('listCtrl', function ($scope, ajaxStorage,
             $('a .btn-blue').bind('click', function (event) {
                 event.preventDefault();
 
-                console.log( ajaxStorage.get() );
-
+                //  console.log( ajaxStorage.get() );
                 var _os = $.getOs();
                 //console.log(_os);
             });
