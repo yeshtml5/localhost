@@ -14,16 +14,22 @@
     </div>
     <!--list-->
     <ul>
-        <li data-index="{{$index}}" ng-repeat="list in lists | filter:(!!selectSex || undefined) && {sex:selectSex} : true" class="clfix">
-            <div class="img-wrap">
-                <a href="#!/view/{{$index}}" ng-model="list">
+        <li data-index="{{$index}}"
+            ng-repeat="list in lists | filter:(!!selectSex || undefined) && {sex:selectSex} : true| orderBy:'token':true "
+            class="rel clfix">
+            <a href="#!/view/{{$index}}" ng-model="list">
+                <div class="img-wrap ">
                     <i class="thumb"><img src="{{list.img}}"></i>
-                    <span>{{list.name }}</span>
-                </a>
-            </div>
-            <div class="txt-wrap">
-                <button class="btn-blue" ng-click="clickFunc(list,$index);">상세보기</button>
-            </div>
+                    <span class="name">{{list.name }}</span>
+                </div>
+                <div class="txt-wrap ">
+                    <span class="buy">{{list.buy | number:fractionSize}}</span>
+                    <span class="sell">{{list.sell | number:fractionSize}}</span>
+                    <span class="token">{{list.token | number:fractionSize}}</span>
+                    <br>
+                    <button class="btn-blue" ng-click="clickFunc(list,$index);">상세보기</button>
+                </div>
+            </a>
         </li>
     </ul>
     <!--//list-->
@@ -33,7 +39,13 @@
         float: left;
     }
     .listWrap .txt-wrap {
-        float: right;
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        padding-right: 10px;
+        text-align: right;
     }
     .filter-wrap {
         padding: 10px 0;
@@ -41,13 +53,7 @@
     }
     .filter-wrap select {
         display: inline-block;
-        padding: 10px;
+        padding: 5px 20px;
         border: 1px solid #111;
     }
 </style>
-
-
-<script type="text/javascript">
-
-
-</script>

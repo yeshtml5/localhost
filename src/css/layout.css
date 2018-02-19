@@ -65,6 +65,28 @@ nav {
 }
 .listWrap i.thumb img {
     object-fit: cover;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+}
+.listWrap li a {
+    display: block;
+    height: 70px;
+}
+.listWrap li span.name {
+    position: absolute;
+    top: 50%;
+    left: 80px;
+    width: 100px;
+    transform: translateY(-50%);
+}
+.listWrap li span.buy {
+    color: #ff0000;
+}
+.listWrap li span.sell {
+    color: #0000ff;
+}
+.listWrap li span.token {
+    color: #2b669a;
+    font-size: 20px;
 }

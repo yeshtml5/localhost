@@ -2,6 +2,9 @@
 /*==================================================
    CSS initialization & CSS Reset
 ==================================================*/
+html, body {
+    -webkit-text-size-adjust: none;
+}
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, textarea, p, blockquote, th, td, input, select, textarea, button, a {
     margin: 0;
     padding: 0;
@@ -37,9 +40,6 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-body {
-    -webkit-text-size-adjust: none;
-}
 /* 뷰표트 변환시 폰트크기 자동확대 방지 */
 address, caption, cite, code, dfn, em, var {
     font-style: normal;
@@ -58,7 +58,7 @@ body, p, h1, h2, h3, h4, h5, h6, th, td, input, select, textarea, button {
     color: #1a1a1a;
     font-size: 14px;
     font-weight: normal;
-    font-family: 'Open Sans', '맑은 고딕', 'Malgun Gothic', '돋움', 'Dotum', 'Arial', 'Apple Gothic', sans-serif;
+    font-family: 'apple sd gothic neo', '애플고딕', 'Apple Gothic', 'Roboto', 'Noto', 'Droid sans', '맑은 고딕', 'Malgun Gothic', '돋움', 'Dotum', sans-serif;
     word-wrap: break-word;
 }
 /*=== Class Style =========================================*/
@@ -246,9 +246,8 @@ a:active, a:hover {
 }
 /*=== Button ===============================================*/
 .btn-blue {
-    padding: 10px 16px;
+    padding: 5px 10px;
     color: #fff;
-    font-size: 18px;
     line-height: 1.3333333;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, .2);
     border-radius: 6px;
