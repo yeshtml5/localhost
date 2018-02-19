@@ -1,5 +1,16 @@
 [
   {
+    "key": "0",
+    "name": "시바견",
+    "sex": "male",
+    "img": "/src/images/data/img10.jpg",
+    "token": 3000,
+    "buy": 10,
+    "sell": 130,
+    "tag": "#동물#뭘봐",
+    "callback": "callback10"
+  },
+  {
     "key": "1",
     "name": "한가인",
     "sex": "female",
@@ -97,16 +108,5 @@
     "sell": 1000,
     "tag": "#고양이",
     "callback": "callback9"
-  },
-  {
-    "key": "10",
-    "name": "시바견",
-    "sex": "male",
-    "img": "/src/images/data/img10.jpg",
-    "token": 3000,
-    "buy": 10,
-    "sell": 130,
-    "tag": "#동물#뭘봐",
-    "callback": "callback10"
   }
 ]

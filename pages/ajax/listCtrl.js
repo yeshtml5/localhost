@@ -3,14 +3,15 @@
 * */
 angular.module('localApp').controller('listCtrl', function ($scope, ajaxStorage, $http) {
 
+    var ajax = "/src/json/list.json";
     $http.get(ajax).then(function (res) {
         //data
         $scope.lists = res.data;
+        ajaxStorage.set($scope.lists);
     });
 
     $scope.clickFunc = function (list, index) {
-        console.log('------');
-        console.log(index);
+
         document.title = 'test';
         //$('button').removeClass('btn-blue');
     };
@@ -19,8 +20,11 @@ angular.module('localApp').controller('listCtrl', function ($scope, ajaxStorage,
             //return false;
             $('a .btn-blue').bind('click', function (event) {
                 event.preventDefault();
+
+                console.log( ajaxStorage.get() );
+
                 var _os = $.getOs();
-                console.log(_os);
+                //console.log(_os);
             });
         });
     })($);

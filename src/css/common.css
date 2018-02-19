@@ -77,6 +77,11 @@ body, p, h1, h2, h3, h4, h5, h6, th, td, input, select, textarea, button {
 img.fit {
     object-fit: cover;
 }
+img.flex {
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+}
 .clfix:after {
     content: ".";
     display: block;
