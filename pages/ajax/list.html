@@ -5,14 +5,13 @@
     <!--Filter-->
     <div class="filter-wrap">
         <select id="filter" ng-model="selectSex">
-            <option ng-value="" checked="checked">모두선택</option>
-            <option ng-value="male">남자</option>
-            <option ng-value="female">여자</option>
-            <option ng-value="etc">기타</option>
+            <option value="" checked="checked">모두선택</option>
+            <option value="male">남자</option>
+            <option value="female">여자</option>
+            <option value="etc">기타</option>
         </select>
-        <span>{{selectSex}}</span>
         <select id="orderBy" ng-model="orderBy" ng-init="orderBy=true">
-            <option ng-value=true checked="checked">내림차순</option>
+            <option ng-value=true>내림차순</option>
             <option ng-value=false>오름차순</option>
         </select>
     </div>
