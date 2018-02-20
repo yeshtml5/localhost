@@ -1,3 +1,7 @@
+function log(msg) {
+    console.log('%c' + msg + '', 'padding:1px; color:#bada55; font-size:14px; background:#222;');
+}
+
 var app = angular.module('localApp', ['ngRoute']);
 /*==================================================
    Router
@@ -63,7 +67,7 @@ app.controller('localCtrl', function ($scope) {
 
     /*최상위*/
     $scope.common = function () {
-        console.log('common');
+        log('commo1n');
     }
 });
 
