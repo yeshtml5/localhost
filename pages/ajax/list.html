@@ -5,24 +5,28 @@
     <!--Filter-->
     <div class="filter-wrap">
         <select id="filter" ng-model="selectSex">
-            <option value="" checked="checked">모두선택</option>
-            <option value="male">남자</option>
-            <option value="female">여자</option>
-            <option value="etc">기타</option>
+            <option ng-value="" checked="checked">모두선택</option>
+            <option ng-value="male">남자</option>
+            <option ng-value="female">여자</option>
+            <option ng-value="etc">기타</option>
         </select>
         <span>{{selectSex}}</span>
+        <select id="orderBy" ng-model="orderBy" ng-init="orderBy=true">
+            <option ng-value=true checked="checked">내림차순</option>
+            <option ng-value=false>오름차순</option>
+        </select>
     </div>
     <!--list-->
     <ul>
         <li data-index="{{$index}}"
-            ng-repeat="list in lists | filter:(!!selectSex || undefined) && {sex:selectSex} : true| orderBy:'token':true"
+            ng-repeat="list in lists | filter:(!!selectSex || undefined) && {sex:selectSex} : true | orderBy:'token': orderBy"
             class="rel clfix">
             <a href="#!/view/{{list.key}}" ng-model="list">
-                <div class="img-wrap ">
+                <div class="img-wrap">
                     <i class="thumb"><img ng-src="{{list.img}}"></i>
                     <span class="name">{{list.name }}</span>
                 </div>
-                <div class="txt-wrap ">
+                <div class="txt-wrap clfix">
                     <span class="buy">{{list.buy | number:fractionSize}}</span>
                     <span class="sell">{{list.sell | number:fractionSize}}</span>
                     <br>
@@ -36,7 +40,7 @@
 </main>
 <style>
     .listWrap .img-wrap {
-        float: left;
+
     }
     .listWrap .txt-wrap {
         display: block;

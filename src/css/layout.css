@@ -71,7 +71,6 @@ nav {
 }
 .listWrap li a {
     display: block;
-    height: 70px;
 }
 .listWrap li span.name {
     position: absolute;
