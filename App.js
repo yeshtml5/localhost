@@ -55,11 +55,16 @@ app.directive('ngFooter', function () {
     }
 });
 /*==================================================
-   Controller
+   Controller $rootScope
 ==================================================*/
 app.controller('localCtrl', function ($scope) {
     $scope.title = "이것은 페이지 타이틀이다.";
     $scope.menu1 = "dkdd";
+
+    /*최상위*/
+    $scope.common = function () {
+        console.log('common');
+    }
 });
 
 // create the controller and inject Angular's $scope

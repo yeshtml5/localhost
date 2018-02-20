@@ -7,7 +7,8 @@
 ==================================================*/
 angular.module('localApp').controller('headerCtrl', function ($scope) {
     $scope.navFunc = function () {
-
+        //최상위
+        $scope.common();
     }
 });
 /*==================================================
