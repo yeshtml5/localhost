@@ -1,10 +1,11 @@
 <header class="container" ng-controller="headerCtrl">
     <a href="#" class="menu"><img src="/src/images/common/header.menu.svg"></a>
-    <a href="#!/" ng-init="selectAnc = 0" ng-class="{'on':selectAnc==0}" ng-click="selectAnc=0" class="trans tit">전체</a>
-    <a href="#!/" ng-class="{'on':selectAnc==1}" ng-click="selectAnc=1" class="trans tit">관심</a>
+    <a href="#!/" ng-click="navFunc($event)" class="on trans tit">전체</a>
+    <a href="#!/" ng-click="navFunc($event)" class="trans tit">관심</a>
     <a href="#" class="search"><img src="/src/images/common/header.search.svg"></a>
+
     <nav>
-        <a class="trans" ng-click="navFunc($event)" href="#!/">HOME</a>
+        <a class="on ßtrans" ng-click="navFunc($event)" href="#!/">HOME</a>
         <a class="trans" ng-click="navFunc($event)" href="#!/ajax">Ajax</a>
         <a class="trans" ng-click="navFunc($event)" href="#!/button">Button</a>
         <a class="trans" ng-click="navFunc($event)" href="#!/util">util</a>
