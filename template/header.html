@@ -1,9 +1,13 @@
 <header class="container" ng-controller="headerCtrl">
-    <nav class="bg-blue">
-        <a class="menu" ng-click="navFunc()" href="#!/">HOME</a>
-        <a class="menu" ng-click="navFunc()" href="#!/ajax">Ajax</a>
-        <a class="menu" ng-click="navFunc()" href="#!/button">Button</a>
-        <a class="menu" ng-click="navFunc()" href="#!/util">util</a>
-        <a class="menu" ng-click="navFunc()" href="#!/test">test</a>
+    <a href="#" class="menu"><img src="/src/images/common/header.menu.svg"></a>
+    <a href="#!/" ng-class="{'on':selectAnc==0}" ng-click="selectAnc=0" class="trans tit on">전체</a>
+    <a href="#!/" ng-class="{'on':selectAnc==1}" ng-click="selectAnc=1" class="trans tit">관심</a>
+    <a href="#" class="search"><img src="/src/images/common/header.search.svg"></a>
+    <nav>
+        <a class="on" ng-click="navFunc()" href="#!/">HOME</a>
+        <a class="" ng-click="navFunc()" href="#!/ajax">Ajax</a>
+        <a class="" ng-click="navFunc()" href="#!/button">Button</a>
+        <a class="" ng-click="navFunc()" href="#!/util">util</a>
+        <a class="" ng-click="navFunc()" href="#!/test">test</a>
     </nav>
 </header>

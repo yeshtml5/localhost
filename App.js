@@ -31,6 +31,17 @@ app.config(function ($routeProvider) {
 /*==================================================
    directive
 ==================================================*/
+app.directive('siblingsOn', function () {
+    return {
+        scope: true,
+        link: function (scope, element, attrs) {
+            scope.addClassOn = function () {
+                element.siblings().removeClass('on');
+                element.addClass('on');
+            }
+        }
+    }
+});
 app.directive('ngHeader', function () {
     return {
         templateUrl: '/template/header.html'
@@ -65,7 +76,6 @@ app.controller('localCtrl', function ($scope) {
     $scope.title = "이것은 페이지 타이틀이다.";
     $scope.menu1 = "dkdd";
 
-    /*최상위*/
     $scope.common = function () {
         log('commo1n');
     }

@@ -58,7 +58,7 @@ body, p, h1, h2, h3, h4, h5, h6, th, td, input, select, textarea, button {
     color: #1a1a1a;
     font-size: 14px;
     font-weight: normal;
-    font-family: 'apple sd gothic neo', '애플고딕', 'Apple Gothic', 'Roboto', 'Noto', 'Droid sans', '맑은 고딕', 'Malgun Gothic', '돋움', 'Dotum', sans-serif;
+    font-family: 'AppleSDGothicNeo', 'apple sd gothic neo', '애플고딕', 'Apple Gothic', 'Roboto', 'Noto', 'Droid sans', '맑은 고딕', 'Malgun Gothic', '돋움', 'Dotum', sans-serif;
     word-wrap: break-word;
 }
 /*=== Class Style =========================================*/
