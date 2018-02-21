@@ -8,11 +8,12 @@
 angular.module('localApp').controller('headerCtrl', function ($scope) {
 
 
+    $scope.navFunc = function (event) {
+        //    var _ele = angular.element('header nav a').addClass('on');
+        var _target = $(event.target);
+        var _index = _target.index();
+        _target.addClass('on').siblings('a').removeClass('on');
 
-
-    $scope.navFunc = function () {
-        //최상위
-        $scope.common();
     }
 
     function headerInit() {

@@ -49,7 +49,8 @@ app.directive('ngHeader', function () {
 });
 app.directive('ngFooter', function () {
     return {
-        //  templateUrl: '/template/footer.html'
+        templateUrl: '/template/footer.html'
+        /*
         template: "<ng-include src='getTemplateUrl()'/>",
         scope: {
             user: "= data"
@@ -67,14 +68,14 @@ app.directive('ngFooter', function () {
                 }
             }
         }
+        */
     }
 });
 /*==================================================
    Controller $rootScope
 ==================================================*/
 app.controller('localCtrl', function ($scope) {
-    $scope.title = "이것은 페이지 타이틀이다.";
-    $scope.menu1 = "dkdd";
+
 
     $scope.common = function () {
         log('commo1n');

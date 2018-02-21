@@ -20,7 +20,7 @@
         <li data-index="{{$index}}"
             ng-repeat="list in lists | filter:(!!selectSex || undefined) && {sex:selectSex} : true | orderBy:'token': orderBy"
             class="rel clfix">
-            <a href="#!/view/{{list.key}}" ng-model="list">
+            <a href="#!/view/{{list.key}}" ng-model="list" class="container">
                 <div class="img-wrap">
                     <i class="thumb"><img ng-src="{{list.img}}"></i>
                     <span class="name">{{list.name }}</span>
