@@ -1,4 +1,4 @@
-angular.module('localApp').controller('viewCtrl', function ($scope, $routeParams, $location, $http) {
+angular.module('app').controller('viewCtrl', function ($scope, $routeParams, $location, $http) {
     var url = $location.path();
     $scope.index = $routeParams.id;
     $scope.url = $location.path();

@@ -1,11 +1,11 @@
 <header class="container" ng-controller="headerCtrl">
-    <a href="#" class="menu"><img src="/src/images/common/header.menu.svg"></a>
+    <a href="#!/" ng-click="selectOn($event)" class="menu"><img src="/src/images/common/header.menu.svg"></a>
     <a href="#!/" ng-click="navFunc($event)" class="on trans tit">전체</a>
     <a href="#!/" ng-click="navFunc($event)" class="trans tit">관심</a>
-    <a href="#" class="search"><img src="/src/images/common/header.search.svg"></a>
+    <a href="#!/" class="search"><img src="/src/images/common/header.search.svg"></a>
 
     <nav>
-        <a class="on ßtrans" ng-click="navFunc($event)" href="#!/">HOME</a>
+        <a class="on trans" ng-click="navFunc($event)" href="#!/">HOME</a>
         <a class="trans" ng-click="navFunc($event)" href="#!/ajax">Ajax</a>
         <a class="trans" ng-click="navFunc($event)" href="#!/button">Button</a>
         <a class="trans" ng-click="navFunc($event)" href="#!/util">util</a>

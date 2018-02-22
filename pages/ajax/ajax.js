@@ -1,4 +1,4 @@
-angular.module('localApp').factory('ajaxStorage', function ($http) {
+angular.module('app').factory('ajaxStorage', function ($http) {
     var storage = {
         _data: null,
         load: function (url) {

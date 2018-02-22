@@ -5,7 +5,7 @@
 /*==================================================
    header
 ==================================================*/
-angular.module('localApp').controller('headerCtrl', function ($scope) {
+angular.module('app').controller('headerCtrl', function ($scope) {
 
 
     $scope.navFunc = function (event) {
@@ -27,7 +27,7 @@ angular.module('localApp').controller('headerCtrl', function ($scope) {
 /*==================================================
    footer
 ==================================================*/
-angular.module('localApp').controller('footerCtrl', function ($scope) {
+angular.module('app').controller('footerCtrl', function ($scope) {
     $scope.footerFunc = function () {
         alert('2');
     }

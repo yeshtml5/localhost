@@ -2,14 +2,14 @@ function log(msg) {
     console.log('%c' + msg + '', 'padding:1px; color:#bada55; font-size:14px; background:#222;');
 }
 
-var app = angular.module('localApp', ['ngRoute']);
+var app = angular.module('app', ['ngRoute']);
 /*==================================================
    Router
    controller 표시 2번호출됨.
 ==================================================*/
 app.config(function ($routeProvider) {
     $routeProvider.when('/', {
-        templateUrl: '/pages/main/index.html',
+        templateUrl: '/pages/home/home.html',
         controller: 'mainCtrl'
     }).when('/ajax', {
         templateUrl: '/pages/ajax/list.html'
@@ -74,7 +74,7 @@ app.directive('ngFooter', function () {
 /*==================================================
    Controller $rootScope
 ==================================================*/
-app.controller('localCtrl', function ($scope) {
+app.controller('ctrl', function ($scope) {
 
 
     $scope.common = function () {

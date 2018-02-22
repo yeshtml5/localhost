@@ -1,7 +1,7 @@
 /*
 * https://stackoverflow.com/questions/22408790/angularjs-passing-data-between-pages
 * */
-angular.module('localApp').controller('listCtrl', function ($scope, ajaxStorage, $http) {
+angular.module('app').controller('listCtrl', function ($scope, ajaxStorage, $http) {
 
     var ajax = "/src/json/list.json";
     $http.get(ajax).then(function (res) {
