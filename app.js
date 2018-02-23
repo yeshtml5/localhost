@@ -5,16 +5,18 @@ function log(msg) {
 var app = angular.module('app', ['ngRoute']);
 /*==================================================
    Router
-   controller 표시 2번호출됨.
+
 ==================================================*/
 app.config(function ($routeProvider) {
     $routeProvider.when('/', {
         templateUrl: '/pages/home/home.html',
         controller: 'mainCtrl'
     }).when('/ajax', {
-        templateUrl: '/pages/ajax/list.html'
+        templateUrl: '/pages/ajax/list.html',
+        controller: 'listCtrl'
     }).when('/view/:id', {
-        templateUrl: '/pages/ajax/view.html'
+        templateUrl: '/pages/ajax/view.html',
+        controller: 'viewCtrl'
     }).when('/button', {
         templateUrl: '/pages/style/button.html',
         controller: 'buttonCtrl'
@@ -75,8 +77,6 @@ app.directive('ngFooter', function () {
    Controller $rootScope
 ==================================================*/
 app.controller('ctrl', function ($scope) {
-
-
     $scope.common = function () {
         log('commo1n');
     }
