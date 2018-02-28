@@ -5,7 +5,6 @@ function log(msg) {
 var app = angular.module('app', ['ngRoute']);
 /*==================================================
    Router
-
 ==================================================*/
 app.config(function ($routeProvider) {
     $routeProvider.when('/', {
