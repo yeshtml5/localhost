@@ -120,8 +120,6 @@ img.flex {
 }
 /*=== Layout ===============================================*/
 /*다단나누기*/
-.col {
-}
 .col:after {
     display: block;
     clear: both;
@@ -130,11 +128,8 @@ img.flex {
 .col > * {
     float: left;
 }
-.col-100 {
-    width: 100%;
-}
 .col-1 {
-    width: 980px;
+    width: 100%;
 }
 /*1단*/
 .col.col-2 > * {
@@ -160,7 +155,6 @@ img.flex {
 .col.col-31 > .col-sm {
     width: 33.33%;
 }
-/*3:1분할*/
 /*위치제어*/
 .left {
     text-align: left;
@@ -175,10 +169,10 @@ img.flex {
     margin-left: auto;
     margin-right: auto;
 }
-.floatLeft {
+.float-left {
     float: left !important;
 }
-.floatRight {
+.float-right {
     float: right !important;
 }
 .middle {
@@ -283,6 +277,33 @@ h1 {
     font-size: 36px;
     font-weight: normal;
 }
+/*=== Flex-box =================================================*/
+.flex-box {
+    display: -webkit-flex;
+    display: flex;
+}
+.flex-center {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+.flex-initial {
+    -webkit-flex: initial;
+    flex: initial;
+}
+.flex-none {
+    -webkit-flex: none;
+    flex: none;
+}
+/*=== Grid =================================================*/
+.grid-center {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
 /*=== Form =================================================*/
 
 /*=== Table =================================================*/
@@ -296,6 +317,24 @@ h1 {
 
 /*=== Line ============================================*/
 
+/*=== Loading ============================================*/
+.loading-donut {
+    display: inline-block;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #7983ff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: donut-spin 0.6s linear infinite;
+}
+@keyframes donut-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 /*==================================================
 	Media Query style
 ==================================================*/
