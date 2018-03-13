@@ -3,7 +3,7 @@ angular.module('app').controller('viewCtrl', function ($scope, $routeParams, $lo
     $scope.index = $routeParams.id;
     $scope.url = $location.path();
 
-    var ajax = "/src/json/list.json";
+    var ajax = "/angular/json/list.json";
     $http.get(ajax).then(function (res) {
         //data
         var _info = res.data[$scope.index];

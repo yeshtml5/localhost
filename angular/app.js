@@ -8,22 +8,22 @@ var app = angular.module('app', ['ngRoute']);
 ==================================================*/
 app.config(function ($routeProvider) {
     $routeProvider.when('/', {
-        templateUrl: '/pages/home/home.html',
+        templateUrl: '/angular/pages/home/home.html',
         controller: 'mainCtrl'
     }).when('/ajax', {
-        templateUrl: '/pages/ajax/list.html',
+        templateUrl: '/angular/pages/ajax/list.html',
         controller: 'listCtrl'
     }).when('/view/:id', {
-        templateUrl: '/pages/ajax/view.html',
+        templateUrl: '/angular/pages/ajax/view.html',
         controller: 'viewCtrl'
     }).when('/button', {
-        templateUrl: '/pages/style/button.html',
+        templateUrl: '/angular/pages/style/button.html',
         controller: 'buttonCtrl'
     }).when('/util', {
-        templateUrl: '/pages/util/limit.html',
+        templateUrl: '/angular/pages/util/limit.html',
         controller: 'limitCtrl'
     }).when('/error', {
-        templateUrl: '/pages/etc/error.html',
+        templateUrl: '/angular/pages/etc/error.html',
         controller: 'buttonCtrl'
     }).otherwise({
         redirectTo: '/error'
@@ -45,12 +45,12 @@ app.directive('siblingsOn', function () {
 });
 app.directive('ngHeader', function () {
     return {
-        templateUrl: '/template/header.html'
+        templateUrl: '/angular/template/header.html'
     }
 });
 app.directive('ngFooter', function () {
     return {
-        templateUrl: '/template/footer.html'
+        templateUrl: '/angular/template/footer.html'
         /*
         template: "<ng-include src='getTemplateUrl()'/>",
         scope: {
