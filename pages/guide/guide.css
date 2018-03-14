@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+/*=== common =========================================*/
+body {
+    position:relative;
+    width:100%;
+    box-sizing:border-box;
+}
+article {
+    display:block;
+    width:100%;
+    padding-left:200px;
+    box-sizing:border-box;
+}
+.wrapper {
+    max-width:800px;
+    margin-left:auto;
+    margin-right:auto;
+}
+/*=== [nav] =========================================*/
+nav {
+    position:absolute;
+    width:200px;
+    height:100%;
+    padding:20px 20px;
+    color:#fff;
+    background:#1a1c20;
+    box-sizing:border-box;
+}
+nav > a::before {
+    padding-right:5px;
+    content:'#';
+}
+nav a {
+    display:block;
+    padding:3px 10px;
+}
+nav a:hover {
+    color:#ff0000;
+}
+nav ul {
+    margin-bottom:20px;
+    padding-left:20px;
+}
+/*=== [ng-view] viewer =========================================*/
+.viewer section {
+    padding:30px 100px;
+    border-bottom:1px solid #ededed;
+    box-sizing:border-box;
+}
+.viewer section.title {
+    color:#fff;
+    background:#0f1217 !important;
+}
+.viewer section:nth-child(odd) {
+    background:rgb(249, 249, 250);
+}
+.viewer section:nth-child(even) {
+    background:rgb(255, 255, 255);
+}
+/*=== footer =========================================*/
+footer {
+    background:#eeeeee;
+}
